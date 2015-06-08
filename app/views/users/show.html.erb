@@ -10,5 +10,11 @@
   <%= @user.email %>
 </p>
 
+<h2>Previous twoots:</h2>
+<%= render @user.twoots %>
+
+<h2>Twoot your emotions:</h2>
+<%= render 'twoots/form' %>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

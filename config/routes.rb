@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  resources :microposts
-  resources :users
+  resources :users do
+    resources :twoots
+  end
 
   root 'users#index'
   # The priority is based upon order of creation: first created -> highest priority.

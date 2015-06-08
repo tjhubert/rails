@@ -1,0 +1,10 @@
+<p>
+	<strong>Twoot:</strong>
+	<%= twoot.body %>
+</p>
+
+<p>
+	<%= link_to 'Delete Twoot', [twoot.user, twoot],
+	           method: :delete,
+	           data: { confirm: 'Are you sure?' } %>
+</p>
